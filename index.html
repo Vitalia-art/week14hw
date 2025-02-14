@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Анализ оценок студентов</title>
+    <link rel="stylesheet" href="assets/styles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Анализ оценок студентов</h1>
+      <button onclick="generateGrades()">Сгенерировать оценки</button>
+      <div id="results">
+        <p><strong>Средний балл:</strong> <span id="average"></span></p>
+        <p><strong>Максимальный балл:</strong> <span id="max"></span></p>
+        <p><strong>Минимальный балл:</strong> <span id="min"></span></p>
+        <p>
+          <strong
+            >Количество студентов с положительными оценками (≥ 60):</strong
+          >
+          <span id="positiveCount"></span>
+        </p>
+        <p>
+          <strong
+            >Количество студентов с отрицательными оценками (< 60):</strong
+          >
+          <span id="negativeCount"></span>
+        </p>
+        <p><strong>Оценки в буквенном формате:</strong></p>
+        <ul id="letterGrades"></ul>
+      </div>
+    </div>
+    <script src="assets/script/script.js"></script>
+  </body>
+</html>
